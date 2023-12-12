@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show Modal...</title>
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/script.js" defer></script>
 </head>
 
 <body>
-    <div class="btns">
-        <button>Show Modal 1</button>
-        <button>Show Modal 2</button>
-        <button>Show Modal 3</button>
+    <div class="ovarlay hidden"></div>
+    <div class="btns-area">
+        <button class="openbtn">Show Modal 1</button>
+        <button class="openbtn">Show Modal 2</button>
+        <button class="openbtn">Show Modal 3</button>
     </div>
     <main>
-        <div class="modal1">
+        <div class="modal hidden">
             <button class="closebtn">&times;</button>
             <h1>First Modal</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid deserunt voluptates fuga quas quo?
@@ -33,7 +34,7 @@
                 commodi.</p>
         </div>
 
-        <div class="modal2 ">
+        <div class="modal hidden">
             <button class="closebtn">&times;</button>
             <h1>Second Modal</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid deserunt voluptates fuga quas quo?
@@ -49,7 +50,7 @@
                 inventore vitae animi rerum ipsam sunt adipisci obcaecati! Ex repellat eius maiores enim praesentium
                 commodi.</p>
         </div>
-        <div class="modal3 hidden">
+        <div class="modal hidden">
             <button class="closebtn">&times;</button>
             <h1>Third Modal</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid deserunt voluptates fuga quas quo?
